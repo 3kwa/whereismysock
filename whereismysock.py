@@ -47,7 +47,9 @@ class Stream(Iterator):
         self.listener.start()
         self.get = Get(self.queue)
 
-    def next(self):
+    def __next__(self):
+        if not self.listener.is_alive():
+            raise LostASock("check the dryer!")
         return self.get()
 
 
@@ -105,3 +107,7 @@ class AllSinceLast:
         except IndexError:
             pass
         return result
+
+
+class LostASock(Exception):
+    pass
