@@ -6,6 +6,7 @@ setup(
     version='2019.3.0',
     description='A convenient way to work with websocket data streams',
     long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
     py_modules=['whereismysock'],
     author='Eugene Van den Bulke',
     author_email='eugene.vandenbulke@gmail.com',
