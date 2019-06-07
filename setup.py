@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='whereismysock',
-    version='2019.3.0',
+    version='2019.6.0',
     description='A convenient way to work with websocket data streams',
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
