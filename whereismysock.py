@@ -4,7 +4,8 @@ top of the Python iterator protocol and the excellent lomond library.
 """
 
 import threading
-from collections import deque, Iterator
+from collections import deque
+from collections.abc import Iterator
 
 import lomond
 
